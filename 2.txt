@@ -1,0 +1,14 @@
+@startuml
+start
+:¬вод a,b;
+if(a=b) then(да)
+:b=0;
+:a=0;
+else(нет)
+:c=a;
+:a=a+b;
+:b=b+c;
+endif
+:вывод:a,b;
+stop
+@enduml

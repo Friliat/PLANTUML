@@ -1,0 +1,15 @@
+@startuml
+start
+:¬вод a,b,m;
+:x=a*Pow(b,2)-Sin(Pow(b,2)+m*b);
+:y=0;
+if(x<-PI) then(да)
+:y=1-(Exp(-a*x)+Exp(-b*x));
+else if(x<=PI) then (да)
+:y=1-Exp(-a*x)*(a*x+b);
+else(нет)
+:y=1-Exp(-a*x)*Sin(a*x+b);
+endif
+:вывод:y;
+stop
+@enduml

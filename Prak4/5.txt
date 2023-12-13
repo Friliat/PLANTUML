@@ -1,0 +1,12 @@
+@startuml
+start
+:S=0;
+:Ввод a;
+:k=0;
+while(a=>S)
+:k=k+1;
+:S=S+K;
+endwhile
+:Вывод:k;
+stop
+@enduml

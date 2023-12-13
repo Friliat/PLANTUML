@@ -1,0 +1,11 @@
+@startuml
+start
+:i=0;
+:Ввод a;
+:b=0;
+while(i<=a;i++)
+:b=b+Pow((a+i),2);
+endwhile
+:Вывод:b;
+stop
+@enduml

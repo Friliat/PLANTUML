@@ -1,0 +1,44 @@
+@startuml
+start
+:Ввод nn,cc;
+if (cc=="3") then(да)
+switch(nn)
+case(1)
+:cc=="Ю";
+case(0)
+:cc=="З";
+case(-1)
+:cc=="С";
+endswitch
+elseif(cс=="C") then (да)
+switch(nn)
+case(1)
+:cc=="З";
+case(0)
+:сс=="С";
+case(-1)
+:cc=="В";
+endswitch
+if(cc=="Ю") then (да)
+switch(nn)
+case(1)
+:cc=="В";
+case(0)
+:cc=="Ю";
+case(-1)
+:cc=="З";
+endswitch
+elseif(cc=="В") then (нет)
+switch(nn)
+case(1)
+:cc=="С";
+case(0)
+:cc=="В";
+case(1)
+:cc=="Ю";
+endswitch
+endif
+endif
+:вывод:сс;
+stop
+@enduml

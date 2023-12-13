@@ -1,0 +1,24 @@
+@startuml
+start
+:k=-1;
+:Ввод n;
+:max=0;
+:cr = 0;
+while(i=1;i<=n;i++)
+if(m%8==0) then(да)
+if (k=-1) then(да)
+:max=m;
+:k=0;
+else
+:max=max+m;
+:cr=max/n;
+endif
+endif
+endwhile
+if(k!=-1) then (да)
+:Вывод:cr:f1;
+else
+:Вывод:"NO";
+endif
+stop
+@enduml

@@ -1,0 +1,16 @@
+@startuml
+start
+:Ввод x,y;
+:s="";
+if(x<=25&&y<=50||x>=-25 &&y>=-50) then(да)
+if(x==25 && y==50 ||x==-25 && y ==-50) then (да)
+:s="На границе";
+else(нет)
+:s="Нет";
+endif
+else(нет)
+:s="Да";
+endif
+:вывод:s;
+stop
+@enduml

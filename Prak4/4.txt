@@ -1,0 +1,11 @@
+@startuml
+start
+:Ввод a;
+:k=0;
+while(3*k<=a)
+:k=k+1;
+:a=a+1;
+endwhile
+:Вывод:k;
+stop
+@enduml

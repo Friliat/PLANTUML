@@ -1,0 +1,23 @@
+@startuml
+start
+:Ввод n;
+:k=-1;
+:max=0;
+while(i=1;i<=n;i++)
+:Ввод:m;
+if(m%10 = 6||m%6=0) then(да)
+if(k=-1) then (да)
+:max=m;
+:k=0;
+else
+:max=max+m;
+endif
+endif
+endwhile
+if(k!=-1) then (да)
+:Вывод:max;
+else
+:Вывод:чисел оканчивающихся на 6 и кратных 6 нет;
+endif
+stop
+@enduml

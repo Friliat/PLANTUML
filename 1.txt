@@ -1,0 +1,12 @@
+@startuml
+start
+:Ввод a;
+:van=a/100;
+:last=a%10;
+if(van>last) then(да)
+:Вывод:"Первое число больше";
+else(нет)
+:Вывод:"Последнее число больше";
+endif
+stop
+@enduml
